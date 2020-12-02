@@ -201,6 +201,8 @@ bool Herwig7Interface::initGenerator() {
       eg_->shoot();
       edm::LogInfo("Herwig7Interface") << "Event discarded";
     }
+    // Produce one event now to get the weight names 
+    thepegEvent = eg_->shoot();
 
     return true;
 

@@ -62,8 +62,6 @@ private:
 
   unsigned int eventsToPrint;
 
-  ThePEG::EventPtr thepegEvent;
-
   std::shared_ptr<lhef::LHEProxy> proxy_;
   const std::string handlerDirectory_;
   edm::ParameterSet paramSettings;

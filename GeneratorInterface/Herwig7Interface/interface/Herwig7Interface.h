@@ -71,6 +71,8 @@ protected:
   // The Inputfile ist created according to the parameter set
   void createInputFile(const edm::ParameterSet &params);
 
+  ThePEG::EventPtr thepegEvent;
+
 private:
   std::shared_ptr<ThePEG::RandomEngineGlue::Proxy> randomEngineGlueProxy_;
 
